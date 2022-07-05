@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/projecttask")
+@RequestMapping("/tasks")
 public class ProjectTaskController {
 
     @Autowired

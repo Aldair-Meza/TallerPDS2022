@@ -21,8 +21,6 @@ public class ProjectTask {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotBlank(message = "El campo no puede estar en blanco")
-    @Column(name = "id")
     private Long id;
     @NotBlank(message = "El campo no puede estar en blanco")
     @Column(name = "name")

@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/backlog")
+@RequestMapping("/backlogs")
 @RequiredArgsConstructor
 public class BacklogController {
 
