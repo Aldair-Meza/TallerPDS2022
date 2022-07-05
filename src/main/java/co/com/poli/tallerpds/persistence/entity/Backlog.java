@@ -2,6 +2,7 @@ package co.com.poli.tallerpds.persistence.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -32,7 +33,7 @@ public class Backlog {
     @JoinColumn(name = "project_id")
     private Project project;
 
-    @JsonBackReference
+    @JsonManagedReference
     @OneToMany(mappedBy = "backlog", cascade = CascadeType.PERSIST)
     private List<ProjectTask> projecttask;
 
